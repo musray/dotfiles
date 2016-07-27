@@ -1,5 +1,14 @@
 echo "welcome, musray"
 
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export PATH
+
 alias bashp="vim ~/.bash_profile"
 alias h="history"
 alias l="ls -lh"
@@ -22,7 +31,7 @@ alias t="date"
 alias d="date"
 
 # Enable tab completion
-source ~/Dev/git-script/git-completion.bash
+source ~/.git-completion.bash
 
 # colors!
 green="\[\033[0;32m\]"
@@ -31,13 +40,13 @@ purple="\[\033[0;35m\]"
 reset="\[\033[0m\]"
 
 # Change command prompt
-source ~/Dev/git-script/git-prompt.sh
+source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 export EDITOR=vim
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+# export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 export PATH=/usr/local/Cellar/mongodb/3.2.0/bin:${PATH}
 
 export PATH=$PATH:node_modules/.bin/
