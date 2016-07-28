@@ -46,7 +46,7 @@ export EDITOR=vim
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-# export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 export PATH=/usr/local/Cellar/mongodb/3.2.0/bin:${PATH}
 
 export PATH=$PATH:node_modules/.bin/
