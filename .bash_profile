@@ -18,7 +18,6 @@ alias txs="networksetup -setautoproxyurl 'Wi-Fi' 'http://x.tu26.net/r/7tje91efa6
 alias connect="curl www.qq.com"
 alias pull="git pull origin master"
 
-# PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
 alias dev="cd ~/Dev"
 alias project="cd ~/Projects"
 # alias do="cd ~/Do"
@@ -37,6 +36,7 @@ source ~/.git-completion.bash
 green="\[\033[0;32m\]"
 blue="\[\033[0;34m\]"
 purple="\[\033[0;35m\]"
+cyan="\[\033[0;36m\]"
 reset="\[\033[0m\]"
 
 # Change command prompt
@@ -46,7 +46,7 @@ export EDITOR=vim
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+export PS1="$purple\u$reset@$cyan\h$green\$(__git_ps1)$blue \W $ $reset"
 export PATH=/usr/local/Cellar/mongodb/3.2.0/bin:${PATH}
 
 export PATH=$PATH:node_modules/.bin/
