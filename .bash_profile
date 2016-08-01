@@ -17,17 +17,11 @@ alias xgj="networksetup -setautoproxyurl 'Wi-Fi' 'https://xgjpac.com/churui.ctec
 alias txs="networksetup -setautoproxyurl 'Wi-Fi' 'http://x.tu26.net/r/7tje91efa6kr.pac'"
 alias connect="curl www.qq.com"
 alias pull="git pull origin master"
+alias aliyun="ssh churui@121.40.72.123"
 
-alias dev="cd ~/Dev"
-alias project="cd ~/Projects"
 # alias do="cd ~/Do"
 alias vimrc="vim ~/.vimrc"
-alias dl="cd ~/Downloads"
-alias uda="cd /Users/churui/Documents/mooc/front-end-nanodegree"
-alias pro="cd ~/Projects"
-alias del="mv \!* ~/.trash"
-alias t="date"
-alias d="date"
+
 
 # Enable tab completion
 source ~/.git-completion.bash
