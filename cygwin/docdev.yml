@@ -1,0 +1,35 @@
+# ~/.tmuxinator/docdev.yml
+
+name: docdev
+root: /cygdrive/d/dev/doc-server
+windows:
+  - backend:
+      layout: 5bfd,193x43,0,0{105x43,0,0,45,87x43,106,0[87x21,106,0,49,87x21,106,22,50]} 
+      panes:
+        - vim /cygdrive/d/dev/doc-server/app.js
+        - vim /cygdrive/d/dev/doc-server/
+        - cd /cygdrive/d/dev/doc-server/
+  - frontend:
+      layout: 34a7,96x42,0,0{51x42,0,0,46,44x42,52,0[44x20,52,0,51,44x21,52,21,52]}
+      panes:
+        - vim /cygdrive/d/dev/doc-server/libs/gen-doc-list.js
+        - vim /cygdrive/d/dev/doc-server/views/index.html
+        - cd /cygdrive/d/dev/doc-server/views/
+  - utility:
+      layout: a745,96x42,0,0{56x42,0,0,47,39x42,57,0[39x20,57,0,53,39x21,57,21,54]}
+      panes:
+        - vim /cygdrive/d/dev/doc-server/utils/ied2json.py
+        - cd /cygdrive/d/dev/doc-server/utils/
+        - ipython-console:
+          - cd /cygdrive/d/dev/doc-server/utils/
+          - ipython
+  - servers: 
+      layout: even-horizontal
+      panes:
+        - mongo-shell:
+          - mongo
+        - mongo-server:
+          - mongod --storageEngine=mmapv1 --dbpath ~/data/db
+        - app-server:
+          - cd /cygdrive/d/dev/doc-server
+          - node app.js

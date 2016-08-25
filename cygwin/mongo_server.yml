@@ -1,0 +1,12 @@
+# ~/.tmuxinator/docdev.yml
+
+name: mongo_server
+root: /cygdrive/d/data/db
+windows:
+  - servers: 
+      layout: even-horizontal
+      panes:
+        - mongo-shell:
+          - mongo
+        - mongo-server:
+          - mongod --storageEngine=mmapv1 --dbpath "D:\data\db"
