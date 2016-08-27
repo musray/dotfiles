@@ -18,6 +18,7 @@ alias txs="networksetup -setautoproxyurl 'Wi-Fi' 'http://x.tu26.net/r/7tje91efa6
 alias connect="curl www.qq.com"
 alias pull="git pull origin master"
 alias aliyun="ssh churui@121.40.72.123"
+alias aws="ssh -i ~/aws/surge-sock.pem ubuntu@54.199.223.186"
 
 # alias do="cd ~/Do"
 alias vimrc="vim ~/.vimrc"
