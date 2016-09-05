@@ -62,3 +62,6 @@ source ~/.tmux_completion.sh
 
 # added by Anaconda3 4.1.1 installer
 export PATH="/Users/churui/anaconda/bin:$PATH"
+
+export NVM_DIR="/Users/churui/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
