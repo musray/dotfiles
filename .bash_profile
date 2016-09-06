@@ -10,14 +10,9 @@ PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export PATH
 
 alias bashp="vim ~/.bash_profile"
-alias h="history"
 alias l="ls -lhG"
 alias ls="ls -G"
 alias ..="cd .."
-alias xgj="networksetup -setautoproxyurl 'Wi-Fi' 'https://xgjpac.com/churui.ctec/11505982.pac'"
-alias txs="networksetup -setautoproxyurl 'Wi-Fi' 'http://x.tu26.net/r/7tje91efa6kr.pac'"
-alias connect="curl www.qq.com"
-alias pull="git pull origin master"
 alias aliyun="ssh churui@121.40.72.123"
 alias aws="ssh -i ~/aws/surge-sock.pem ubuntu@54.199.223.186"
 alias doss="ssh -i ~/.ssh/id_rsa root@138.68.2.55"
