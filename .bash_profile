@@ -17,10 +17,6 @@ alias aliyun="ssh churui@121.40.72.123"
 alias aws="ssh -i ~/aws/surge-sock.pem ubuntu@54.199.223.186"
 alias doss="ssh -i ~/.ssh/id_rsa root@138.68.2.55"
 
-# alias do="cd ~/Do"
-alias vimrc="vim ~/.vimrc"
-
-
 # Enable tab completion
 source ~/.git-completion.bash
 
