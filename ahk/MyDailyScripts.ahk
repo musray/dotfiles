@@ -50,19 +50,9 @@ return
 	send, 微软雅黑{enter}
 return
 
-::mima::
-	send, trewq4321``  ;;backquote sign is the escape sign for ahk script.
-return
-
-::jq::
-	send, jQuery
-return
-::gsmc::
-	send, 北京广利核系统工程有限公司
-return
-::angularcdn::
-	send, http://code.angularjs.org/angular-1.2.19.min.js
-return
+;;::mima::
+;;	send, trewq4321``  ;;backquote sign is the escape sign for ahk script.
+;;return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -91,6 +81,21 @@ return
 	send, liubo{enter}
 	send {enter}
 return
+
+::lxlm::
+	run, communicator.exe
+	WinWaitActive, Microsoft Lync
+	send, xialimin{enter}
+	send {enter}
+return
+
+::lwxw::
+	run, communicator.exe
+	WinWaitActive, Microsoft Lync
+	send, wangxiaowei5394{enter}
+	send {enter}
+return
+
 ::llk::
 	run, communicator.exe
 	WinWaitActive, Microsoft Lync
@@ -135,6 +140,27 @@ return
 	run, communicator.exe
 	WinWaitActive, Microsoft Lync
 	send, zhangxuecai{enter}
+	send {enter}
+return
+
+::llc::
+	run, communicator.exe
+	WinWaitActive, Microsoft Lync
+	send, luchao{enter}
+	send {enter}
+return
+
+::lxlm::
+	run, communicator.exe
+	WinWaitActive, Microsoft Lync
+	send, xialimin{enter}
+	send {enter}
+return
+
+::lyzs::
+	run, communicator.exe
+	WinWaitActive, Microsoft Lync
+	send, yuanzhisheng{enter}
 	send {enter}
 return
 
