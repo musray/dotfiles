@@ -3,7 +3,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set ruler  "右下角标尺
+set enc=utf-8
+set fileencoding=utf-8
+
+"set ruler  "右下角标尺
 set number     "显示行号
 set relativenumber "使用相对行号
 set backspace=2     "允许使用backspace(ctrl+h)
